@@ -195,7 +195,7 @@ while true
         disp('Or, press ctrl-c to quit anytime');
         disp(' ');
         
-        pause on;
-        pause;
+            pause on;
+            pause;
     end
 end

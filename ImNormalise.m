@@ -10,9 +10,7 @@ function [Normalised,ERROR,angle] = ImNormalise(Im)
         
 Breakout = 0;
 %Detect and Crop face
-tic;
 [CroppedFace,ERRORface] = CropFace(Im);     %Call function to crop face
-toc
 if ERRORface == 1
     Breakout = 1;
 end
