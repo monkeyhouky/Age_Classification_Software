@@ -8,14 +8,14 @@ function [Normalised,ERROR,angle] = ImNormalise(Im)
         %Detects eyes
         %Normalise and return image
         
-Breakout = 0;
+Break = 0;
 %Detect and Crop face
 [CroppedFace,ERRORface] = CropFace(Im);     %Call function to crop face
 if ERRORface == 1
-    Breakout = 1;
+    Break = 1;
 end
 
-if Breakout == 1 
+if Break == 1 
     Normalised = 0;
     angle = 0;
     ERROR = 1;

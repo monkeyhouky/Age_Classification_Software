@@ -4,8 +4,6 @@
 
 clear all; close all; clc;
 
-%Code to determine operating system and detect changes in working directory
-
 MAC = ismac;
 LINUX = isunix;
 WINDOWS = ispc;
