@@ -9,7 +9,7 @@ LINUX = isunix;
 WINDOWS = ispc;
 
 if MAC || LINUX == 1
-    dir_content = ls;
+    dir_content = dir;
 elseif WINDOWS == 1
     dir_content = dir;
 end
@@ -18,7 +18,7 @@ filenames = {dir_content.name};
 current_files = filenames;
 while true
     if MAC || LINUX == 1
-        dir_content = ls;
+        dir_content = dir;
     elseif WINDOWS == 1
         dir_content = dir;
     end
