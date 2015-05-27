@@ -44,6 +44,8 @@ while true
         end
 
         Race = SortRace(Normalised);
+        %Race = 'White';            %remove comment to force desired race
+                                    %can be either 'White' or 'Black'
         if strcmp(Race,'Black')
             for j = RaceRanges{1,1}
                 eval(['load ' files(j).name]);
